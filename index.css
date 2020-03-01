@@ -9,7 +9,9 @@ body {
     line-height: 1.5em;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
@@ -59,7 +61,53 @@ body {
     padding: 2rem;
 }
 
-.col-1,.col-2,.col-3,.col-4 {
-    max-width: 20%;
+.col-1,
+.col-2,
+.col-3,
+.col-4 {
+    width: 24%;
     height: auto;
+    float: left;
+    display: block;
+    overflow: hidden;
+}
+
+.secondary-text {
+    display: block;
+    color: rgb(117, 117, 117);
+    margin-top: 8%;
+}
+
+.col-2,
+.col-4 {
+    color: #000;
+}
+
+.col-3 {
+    color: #58BF88;
+}
+
+hr {
+    color: rgb(236, 236, 236);
+}
+
+@media only screen and (max-width: 425px) {
+
+    .row a {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4 {
+        width: 100%;
+        height: auto;
+        float: left;
+        display: block;
+        overflow: hidden;
+    }
 }
