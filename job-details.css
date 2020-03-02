@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background-color: rgb(252, 245, 245);
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.hero-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/resources/image/photo-1.jpg");
+    height: 40vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* border: 5px solid red; */
+    /* margin-bottom: 2rem; */
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    color: #fff;
+}
+
+
+.job-post-name {
+    margin-top: 5%;
+}
+
+#responsive {
+    max-width: 80px;
+    height: auto;
+    width: 100%
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.snd-layer-text ul li {
+    display: inline;
+    margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.trd-layer-text ul {
+    margin-top: 2%;
+}
+
+.trd-layer-text ul li {
+    display: inline;
+    margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.col-1,.col-2,.col-3 {
+    float: left;
+}
+
+.hero-text .col-1 {
+    width: 20%;
+}
+.hero-text .col-2 {
+    width: 60%;
+}
+.hero-text .col-3 {
+    width: 20%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* .col {
+    float: left;
+    padding: 0 2%;
+} */
+
+.main-section {
+    margin: 2%;
+    background-color: #fff;
+    padding: 0 5%;
+    padding-bottom: 4%;
+    border: 1px solid #ddd;
+    font-family: 'Lato', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about-us, .responsibilities, .skill-experience {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    justify-content: center;
+}
+
+.main-section h2 {
+    margin-bottom: 1.7rem;
+}
+
+.sidebar {
+    /* width: 32%; */
+    margin: 2%;
+    /* border: 1px solid #ddd; */
+}
+
+.social-link ul li {
+    display: inline;
+}
+
+.company-details, .more-jobs {
+    padding: 7% 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.company-details {
+    margin-bottom: 3rem;
+}
+
+.sidebar h3{
+    margin-bottom: 1.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-banner,.main-section, .company-details, .more-jobs {
+        max-width: 100%;
+        display: block;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    img {
+        display: none;
+    }
+}
