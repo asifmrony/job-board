@@ -9,7 +9,7 @@ body {
 }
 
 .open-jobs-wrapper {
-    margin-top: 7vh;
+    margin-top: 5vh;
     margin-bottom: 10vh;
 }
 
@@ -23,11 +23,21 @@ body {
 .my-card {
     /* width: 30vw; */
     border-radius: 1vh;
-    border: 1px solid #fff;
+    border: 1px solid rgb(141, 141, 141);
     margin-bottom: 10vh;
     box-shadow: 0 0.3vw 1.5vw 0 rgba(0, 0, 0, 0.1);
     /* box-shadow: 0 0.3vw 1.5vw 0 rgba(0, 0, 0, 0.19); */
     /* text-align: center; */
+    position: relative;
+}
+
+.my-card .banner {
+    background-image: url(/v0.02/image/showcase_1.jpg);
+    width: 100%;
+    height: 17.3vh;
+    background-size: cover;
+    border-top-left-radius: 0.9vh;
+    border-top-right-radius: 0.9vh;
 }
 
 .my-card p {
@@ -36,12 +46,16 @@ body {
 }
 
 .job-nature {
-    padding: 4vh 0 0 1.5vw;
+    padding: 0.8vh 1vw;
+    color: #fff;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    background-color: #1b915a;
+    border-radius: 0.5vw;
 }
 
-.job-header {
-    
-}
+.job-header {}
 
 .job-header i {
     font-size: 3vw;
@@ -54,14 +68,14 @@ body {
     /* display: block; */
     text-align: center;
     margin: 0;
-    padding: 5vh 0 1vh 0;
+    padding: 3vh 0 1vh 0;
     font-family: 'Caladea', serif;
     font-weight: 400;
 }
 
 .job-description {
     text-align: center;
-    padding: 2vh 0 3vh 0;
+    padding: 0 0 3vh 0;
 }
 
 .job-description .deadline {
@@ -69,7 +83,7 @@ body {
 }
 
 .job-description .location {
-    margin: 2vh 0 0 0;
+    margin: 1.5vh 0 0 0;
 }
 
 .location i {
@@ -78,7 +92,7 @@ body {
 
 .button-block {
     text-align: center;
-    margin: 3vh 0 8vh 0;
+    margin: 2vh 0 5vh 0;
 }
 
 .button {
@@ -87,12 +101,12 @@ body {
     color: #fff;
     border-radius: 1.3vw;
     background-color: #E75D46;
-    
+
 }
 
 .button:hover {
     background-color: #fff;
-    border: 1px solid rgb(240, 194, 134);
+    border: 1px solid #E75D46;
     text-decoration: none;
     color: #aaa;
 }
