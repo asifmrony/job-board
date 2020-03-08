@@ -1,16 +1,47 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins|Lato|Montserrat&display=swap');
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    background-color: rgb(252, 245, 245);
+    font-size: 16px;
+    /* font-weight: 300; */
+    line-height: 1.8rem;
+    background-color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p, ul li, span {
+    color: #5B5C6E;
+}
+
+.breadcrumb-section {
+    background-color: #a0dabf;
+    height: 10vh;
+}
+
+.breadcrumb-section li {
+    margin-right: 2vh;
+}
+
+.breadcrumb {
+    background: none;
+}
+
+.wrapper {
+    margin-top: 4vh;
 }
 
 .post-header {
-    border: 1px solid #aaa;
+    border: 1px solid rgb(241, 241, 241);
+    /* box-shadow: 0 0.3vw 1vw 0 rgba(0, 0, 0, 0.1); */
+}
+
+.header-content {
+    padding: 3vh;
 }
 
 .hiring-banner {
@@ -22,6 +53,106 @@ body {
     background-size: cover;
 }
 
+.job-desc {
+    margin: 9vh 0;
+    padding-right: 6vw;
+    padding-left: 3vh;
+}
+
+.job-desc h3 {
+
+}
+
+.job-desc div {
+    margin-bottom: 8vh;
+}
+
+.job-desc p, ul {
+    padding-top: 5vh;
+    
+}
+
+.job-info-wrapper {
+    margin-top: 10vh;
+    /* position: relative;
+    top: 30%; */
+}
+
+.job-info-wrapper h5, .more-jobs h4 {
+    margin-bottom: 5vh;
+}
+
 .job-info {
-    border: 1px solid #aaa;
+    border: 1px solid #EDEDED;
+    padding: 6vh 3vw;
+}
+
+.job-info .list-items {
+    /* font-weight: 600; */
+    color: #8C8D99;
+    font-size: 1.3vw;
+}
+
+.list-items li {
+    margin-bottom: 2vw;    
+}
+
+.list-header {
+    padding-right: 1vw;
+}
+
+.more-jobs {
+    margin-top: 15vh;
+}
+
+.each-job {
+    /* border: 1px solid #EDEDED; */
+    margin-bottom: 4vh;
+    padding: 2vh 2vw;
+    border-radius: 1vh;
+    position: relative;
+    box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.1);
+}
+
+.each-job h5 {
+    color: #1E2147;
+    font-family: 'Lato', sans-serif;
+}
+
+.each-job p {
+    margin-top: 2vh;
+    color: #A5A5A5;
+}
+
+.each-job i {
+    margin-right: 0.8vw;
+}
+
+.each-job span {
+    position: absolute;
+    top: 12%;
+    right: 7%;
+    font-size: 1vw;
+    color: #A5A5A5;
+}
+
+.button-block {
+    text-align: center;
+    margin: 8vh 0 3vh 0;
+}
+
+.button {
+    padding: 0.8vw 4.4vw;
+    /* border: 1px solid rgb(71, 219, 150); */
+    color: #fff;
+    border-radius: 0.6vw;
+    background-color: #E75D46;
+
+}
+
+.button:hover {
+    background-color: #fff;
+    border: 1px solid #E75D46;
+    text-decoration: none;
+    color: #aaa;
 }

@@ -3,10 +3,10 @@
 
 var numberOfItems =  $('#page .my-card').length; //get total number of items that should be paginated
 // alert(numberOfItems); // should be 6
-var limitPerPage = 4; //item limit per each page
+var limitPerPage = 3; //item limit per each page
 $('#page .my-card:gt('+ (limitPerPage - 1) +')').hide(); //Hide all items after 3 items
 
-var totalPages = Math.round(numberOfItems / limitPerPage); // get number of pages
+var totalPages = Math.ceil(numberOfItems / limitPerPage); // get number of pages
 
 // Add first page marker
 $(".pagination").append("<li class='page-item active current-page'><a class='page-link' href='#'>" + 1 + "<span class='sr-only'>(current)</span></a></li>");
@@ -55,5 +55,10 @@ $("#next-page").on("click", function() {
         }
 
         $(".pagination li.current-page:eq(" + (currentPage - 1) + ")").addClass('active'); // Make new page number the 'active' page
+    
+        $("#page .row").removeClass('col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4');
+
+        $("#page .row").addClass('center-content');
     }
 })
+

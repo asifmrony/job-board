@@ -40,6 +40,18 @@ body {
     border-top-right-radius: 0.9vh;
 }
 
+.card-2 .banner{
+    background-image: url(./image/showcase_2.jpg);
+}
+
+.card-4 .banner {
+    background-image: url(./image/showcase_2.jpg);
+}
+
+.card-6 .banner {
+    background-image: url(./image/showcase_2.jpg);
+}
+
 .my-card p {
     color: #aaa;
     margin: 0;
@@ -109,4 +121,9 @@ body {
     border: 1px solid #E75D46;
     text-decoration: none;
     color: #aaa;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
 }
