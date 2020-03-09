@@ -10,16 +10,23 @@ body {
     background-color: #fff;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Poppins', sans-serif;
 }
 
-p, ul li, span {
+p,
+ul li,
+span {
     color: #5B5C6E;
 }
 
 .breadcrumb-section {
-    background-color: #c7e6d7;
+    background-color: #8ec4ff;
     height: 8vh;
 }
 
@@ -32,12 +39,17 @@ p, ul li, span {
 }
 
 .wrapper {
-    margin-top: 4vh;
+    margin-top: 2vh;
 }
 
 .post-header {
     border: 1px solid rgb(241, 241, 241);
     /* box-shadow: 0 0.3vw 1vw 0 rgba(0, 0, 0, 0.1); */
+}
+
+.post-header:hover {
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid white;
 }
 
 .header-content {
@@ -58,6 +70,35 @@ p, ul li, span {
     justify-content: space-between;
 }
 
+.content-right {
+    padding-left: 20px;
+}
+
+.social-link {}
+
+.social-link ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.social-link ul li {
+    list-style-type: none;
+
+}
+
+.social-link ul li a {
+    margin-right: 2rem;
+}
+
+.social-link ul li a:hover {
+    background-color: rgb(214, 213, 213);
+    padding: 5px 8px;
+    border-radius: 50%;
+    box-shadow: 1px 2px 2px 5px rgba(0, 0, 0, 0.2)
+}
+
 .job-desc {
     margin: 9vh 0;
     padding-right: 6vw;
@@ -65,6 +106,12 @@ p, ul li, span {
 }
 
 .job-desc h3 {
+    line-height: 3rem;
+}
+
+.underline {
+    padding-bottom: 8px;
+    border-bottom: 4px solid #007bff;
 
 }
 
@@ -72,9 +119,10 @@ p, ul li, span {
     margin-bottom: 8vh;
 }
 
-.job-desc p, ul {
-    padding-top: 5vh;
-    
+.job-desc p,
+ul {
+    padding-top: 4vh;
+
 }
 
 .job-info-wrapper {
@@ -83,7 +131,8 @@ p, ul li, span {
     top: 30%; */
 }
 
-.job-info-wrapper h5, .more-jobs h4 {
+.job-info-wrapper h5,
+.more-jobs h4 {
     margin-bottom: 5vh;
 }
 
@@ -99,7 +148,7 @@ p, ul li, span {
 }
 
 .list-items li {
-    margin-bottom: 2vw;    
+    margin-bottom: 2vw;
 }
 
 .list-header {
@@ -162,13 +211,11 @@ p, ul li, span {
     color: #aaa;
 }
 
-@media only screen and (max-width:991px) {
-
-}
+@media only screen and (max-width:991px) {}
 
 @media only screen and (max-width:767px) {
     .job-info {
         text-align: center;
     }
-    
+
 }
