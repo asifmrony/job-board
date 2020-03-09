@@ -19,8 +19,8 @@ p, ul li, span {
 }
 
 .breadcrumb-section {
-    background-color: #a0dabf;
-    height: 10vh;
+    background-color: #c7e6d7;
+    height: 8vh;
 }
 
 .breadcrumb-section li {
@@ -46,11 +46,16 @@ p, ul li, span {
 
 .hiring-banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./image/showcase_2.jpg");
-    height: 30vh;
+    height: 45.6vh;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
 }
 
 .job-desc {
@@ -84,13 +89,13 @@ p, ul li, span {
 
 .job-info {
     border: 1px solid #EDEDED;
-    padding: 6vh 3vw;
+    padding: 6vh 1.5vw;
 }
 
 .job-info .list-items {
     /* font-weight: 600; */
     color: #8C8D99;
-    font-size: 1.3vw;
+    font-size: 1rem;
 }
 
 .list-items li {
@@ -106,12 +111,12 @@ p, ul li, span {
 }
 
 .each-job {
-    /* border: 1px solid #EDEDED; */
+    border: 1px solid #EDEDED;
     margin-bottom: 4vh;
     padding: 2vh 2vw;
     border-radius: 1vh;
     position: relative;
-    box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.1); */
 }
 
 .each-job h5 {
@@ -132,7 +137,7 @@ p, ul li, span {
     position: absolute;
     top: 12%;
     right: 7%;
-    font-size: 1vw;
+    font-size: 1rem;
     color: #A5A5A5;
 }
 
@@ -155,4 +160,15 @@ p, ul li, span {
     border: 1px solid #E75D46;
     text-decoration: none;
     color: #aaa;
+}
+
+@media only screen and (max-width:991px) {
+
+}
+
+@media only screen and (max-width:767px) {
+    .job-info {
+        text-align: center;
+    }
+    
 }
