@@ -219,32 +219,32 @@ ul {
     }
 
 }
-/* .all-content-wrapper {
-    position: relative;
-} */
-
-.apply-now-module {
+.all-content-wrapper {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
-    display: none;
-    position: absolute;
-    top: 0%;
+    position: relative;
+    /* display: none; */
+}
+
+.apply-now-module {
+    
 }
 
 .form-wrapper {
-    height: inherit;
+    /* height: 30%; */
     width: 50%;
     overflow: hidden;
-    margin: 0 auto;
     /* background-color: #599a9c; */
     background-color: #fff;
     padding: 5vh 4vw;
 
-
-    /* position: absolute;
-    bottom: 10%;
-    display: none; */
+    display: fixed;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, 50%);
 }
 
 .form-wrapper .heading{
