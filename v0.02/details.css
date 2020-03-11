@@ -196,12 +196,12 @@ ul {
 }
 
 .button {
-    padding: 0.8vw 4.4vw;
-    /* border: 1px solid rgb(71, 219, 150); */
+    padding: 0.5vw 4.4vw;
+    border: 1px solid #0069D9;
     color: #fff;
     border-radius: 0.6vw;
-    background-color: #E75D46;
-
+    /* background-color: #E75D46; */
+    background-color: #0069D9;
 }
 
 .button:hover {
@@ -219,12 +219,36 @@ ul {
     }
 
 }
-.all-content-wrapper {
+
+/*========================================
+Modal Manual styling
+==========================================*/
+
+.modal-header {
+    margin-bottom: 1rem;
+    border-bottom: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.modal-footer {
+    margin-top: 1.5rem;
+    border: 1px solid linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 2vh 1vw;
+}
+
+/* .all-content-wrapper {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     position: relative;
-    /* display: none; */
+    display: none;
 }
 
 .apply-now-module {
@@ -232,14 +256,11 @@ ul {
 }
 
 .form-wrapper {
-    /* height: 30%; */
     width: 50%;
     overflow: hidden;
-    /* background-color: #599a9c; */
     background-color: #fff;
     padding: 5vh 4vw;
 
-    display: fixed;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -249,4 +270,4 @@ ul {
 
 .form-wrapper .heading{
     margin-bottom: 5vh;
-}
+} */
