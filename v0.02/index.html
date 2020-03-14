@@ -5,23 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Listing Page</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="./resources/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./resources/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    
+
     <div class="overlay-search-wrapper">
-        
+
     </div>
 
     <!-- Open Jobs and Card Section Start -->
 
     <div class="open-jobs-wrapper">
         <div class="container">
-            <h1 class="heading">Open Jobs</h1>
+            <div class="open-job-header">
+                <h1 class="heading">Open Jobs</h1>
+                <div class="right-dropdown">
+                    <select name="dropdown" id="dropdown">
+                        <option value="-Show-All" selected>-Show all-</option>
+                        <option value="design">Parttime</option>
+                        <option value="development">Fulltime</option>
+                        <option value="marketing">Remote</option>
+                    </select>
+                </div>
+            </div>
             <div id="page">
                 <div class="row">
                     <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
@@ -90,7 +99,7 @@
                                 <span class="job-nature">Parttime</span>
                             </div>
                             <div class="job-header">
-                                
+
                                 <h2 class="title">Front End Developer</h2>
                             </div>
                             <hr>
@@ -183,22 +192,16 @@
                     <li class="page-item"><a class="page-link" href="#">3</a></li>
                     <li class="page-item">
                         <a class="page-link" href="#">Next</a>
-                    </li>
-                </ul> -->
+                    </li>-->
+                </ul>
             </nav>
         </div>
     </div>
 
     <!-- Bootstrap Core JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+    <script src="./resources/bootstrap/jquery.min.js"></script>
+    <script src="./resources/bootstrap/bootstrap.min.js"></script>
     <script src="./script.js"></script>
 </body>
 
