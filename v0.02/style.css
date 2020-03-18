@@ -8,6 +8,104 @@ body {
     line-height: 1.5rem;
 }
 
+.overlay-search-wrapper {
+    background-image: url(./resources/image/search-img-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    /* height: 80vh; */
+}
+
+.overlay-search-wrapper > .bg-style {
+    background-color: transparent;
+    /* background-image: linear-gradient(270deg,rgba(0,2,24,0) 0%,#000218 100%); */
+    opacity: 1;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.bg-style {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.search-content-wrapper {
+    min-height: 530px;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.search-content {} /*Style to be added outside of text-column*/ 
+
+.text-column {
+    color: #fff;
+}
+
+.text-column .title {
+    font-family: 'Caladea', serif;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.text-column .sub-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.custom-col {
+    padding: 0;
+}
+
+.custom-row {
+    margin: 0;
+}
+
+.searchbar-container {
+    
+}
+
+.searchbar-container input, .searchbar-container select{
+    height: 60px;
+    width: 200px;
+    border: 0;
+    border-right: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #fff; 
+    padding-left: 20px;
+}
+
+.searchbar-container .search-1 {
+    
+} 
+
+.searchbar-container .search-2 {
+
+}
+
+.searchbar-container .search-3 {
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+}
+
+.searchbar-container .search-3  button {
+    background-color: salmon;
+    border: 0;
+    padding: 0.5rem 2rem; 
+    border-radius: 0.3rem; 
+    color: #fff;
+}
+
 .open-jobs-wrapper {
     margin-top: 5vh;
     margin-bottom: 10vh;
@@ -31,6 +129,7 @@ body {
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     border: none;
+    background-color: #e3f0ea;
 }
 
 .my-card {

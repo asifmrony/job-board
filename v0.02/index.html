@@ -12,9 +12,48 @@
 
 <body>
 
-    <div class="overlay-search-wrapper">
+    <!-- Overlay Search Section Start -->
+    <section class="overlay-search-wrapper">
+        <div class="bg-style"></div>
+        <div class="search-content-wrapper">
+            <div class="row">
+                <div class="search-content">
+                    <div class="text-column">
+                        <h1 class="title">Find Your Dream Job</h1>
+                        <p class="sub-title">23,789 Jobs are available 4583 jobs added everyday</p>
+                        <div class="searchbar-container">
+                            <form action="#">
+                                <div class="row custom-row">
+                                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 custom-col">
+                                        <div class="search-1">
+                                            <input type="text" placeholder="Search Keyword">
 
-    </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 custom-col">
+                                        <div class="search-2">
+                                            <select name="category-select" id="category">
+                                                <option value="Select Category" selected>Select Category</option>
+                                                <option value="design">Parttime</option>
+                                                <option value="development">Fulltime</option>
+                                                <option value="marketing">Remote</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 custom-col">
+                                        <div class="search-3">
+                                            <button type="submit" class="submit-btn"><span>Submit</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Open Jobs and Card Section Start -->
 
@@ -24,10 +63,10 @@
                 <h1 class="heading">Open Jobs</h1>
                 <div class="right-dropdown">
                     <select name="dropdown" id="dropdown">
-                        <option value="-Show-All" selected>-Show all-</option>
-                        <option value="design">Parttime</option>
-                        <option value="development">Fulltime</option>
-                        <option value="marketing">Remote</option>
+                        <option value="-Show-All" selected>-Sort by-</option>
+                        <option value="parttime">Parttime</option>
+                        <option value="fulltime">Fulltime</option>
+                        <option value="remote">Remote</option>
                     </select>
                 </div>
             </div>
@@ -37,10 +76,11 @@
                         <div class="my-card card-1">
                             <div class="banner">
                                 <span class="job-nature">Parttime</span>
-                                <div class="job-header">
-                                    <h2 class="title">Software Engineer</h2>
-                                </div>
                             </div>
+                            <div class="job-header">
+                                <h2 class="title">Software Engineer</h2>
+                            </div>
+
                             <hr>
                             <div class="job-description">
                                 <p><span class="deadline">Deadline:</span> March 25th, 2020</p>
