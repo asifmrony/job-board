@@ -37,7 +37,7 @@ body {
     max-width: 1140px;
     margin: 0 auto;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
 }
 
@@ -56,7 +56,7 @@ body {
 .text-column .sub-title {
     font-size: 20px;
     font-weight: 500;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .custom-col {
@@ -73,7 +73,7 @@ body {
 
 .searchbar-container input, .searchbar-container select{
     height: 60px;
-    width: 200px;
+    width: 100%;
     border: 0;
     border-right: 1px solid #fff;
     background-color: rgba(255, 255, 255, 0.6);
@@ -115,10 +115,14 @@ body {
     font-family: 'Caladea', serif;
     margin-bottom: 10vh;
     padding-bottom: 2vh;
-    border-bottom: 0.7vh solid rgb(7, 7, 138);
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.open-jobs-wrapper .open-job-header .heading span {
+    border-bottom: 0.7vh solid rgb(7, 7, 138);
+    padding-bottom: 2vh;
 }
 
 .right-dropdown #dropdown {
@@ -129,7 +133,7 @@ body {
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     border: none;
-    background-color: #e3f0ea;
+    background-color: #ddd;
 }
 
 .my-card {
@@ -231,4 +235,24 @@ body {
 .center-content {
     display: flex;
     justify-content: center;
+}
+
+.my-card .job-nature{
+    top: 0;
+    right: 0;
+    padding: 0.2rem 0.8rem;
+}
+
+.my-card .job-header .title {
+    margin-top: 40px;
+    /* margin-left: -30px; */
+}
+
+.button-block span {
+    color: #aaa;
+}
+
+.button-block .button {
+    padding: 0.5vw 1.5vw;
+    font-size: 14px;
 }
