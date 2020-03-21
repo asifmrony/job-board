@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Caladea|Lato&display=swap');
 
+/*=====================================
+Global Styles
+=======================================*/
 body {
     margin: 0;
     padding: 0;
@@ -7,6 +10,10 @@ body {
     font-size: 16px;
     line-height: 1.5rem;
 }
+
+/*=====================================
+Top Search Section Styles
+=======================================*/
 
 .overlay-search-wrapper {
     background-image: url(./resources/image/search-img-1.jpg);
@@ -17,7 +24,7 @@ body {
     /* height: 80vh; */
 }
 
-.overlay-search-wrapper > .bg-style {
+.overlay-search-wrapper>.bg-style {
     background-color: transparent;
     /* background-image: linear-gradient(270deg,rgba(0,2,24,0) 0%,#000218 100%); */
     opacity: 1;
@@ -41,7 +48,9 @@ body {
     align-items: center;
 }
 
-.search-content {} /*Style to be added outside of text-column*/ 
+.search-content {}
+
+/*Style to be added outside of text-column*/
 
 .text-column {
     color: #fff;
@@ -67,27 +76,22 @@ body {
     margin: 0;
 }
 
-.searchbar-container {
-    
-}
+.searchbar-container {}
 
-.searchbar-container input, .searchbar-container select{
+.searchbar-container input,
+.searchbar-container select {
     height: 60px;
     width: 100%;
     border: 0;
     border-right: 1px solid #fff;
     background-color: rgba(255, 255, 255, 0.6);
-    color: #fff; 
+    color: #fff;
     padding-left: 20px;
 }
 
-.searchbar-container .search-1 {
-    
-} 
+.searchbar-container .search-1 {}
 
-.searchbar-container .search-2 {
-
-}
+.searchbar-container .search-2 {}
 
 .searchbar-container .search-3 {
     width: 200px;
@@ -98,13 +102,17 @@ body {
     padding-left: 70px;
 }
 
-.searchbar-container .search-3  button {
+.searchbar-container .search-3 button {
     background-color: salmon;
     border: 0;
-    padding: 0.5rem 2rem; 
-    border-radius: 0.3rem; 
+    padding: 0.5rem 2rem;
+    border-radius: 0.3rem;
     color: #fff;
 }
+
+/*=====================================
+Open Jobs Section Styles Start
+=======================================*/
 
 .open-jobs-wrapper {
     margin-top: 5vh;
@@ -237,7 +245,7 @@ body {
     justify-content: center;
 }
 
-.my-card .job-nature{
+.my-card .job-nature {
     top: 0;
     right: 0;
     padding: 0.2rem 0.8rem;
@@ -255,4 +263,15 @@ body {
 .button-block .button {
     padding: 0.5vw 1.5vw;
     font-size: 14px;
+}
+
+/*=====================================
+Open jobs - Sortout/Filter based Styles
+=======================================*/
+.filterDiv {
+    display: none;
+}
+
+.showDivs {
+    display: block;
 }

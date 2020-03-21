@@ -1,14 +1,15 @@
 // $('body').hide();
 // 'use strict';
 
-var numberOfItems =  $('#page .my-card').length; //get total number of items that should be paginated
+var numberOfItems = $('#page .my-card').length; //get total number of items that should be paginated
 // alert(numberOfItems); // should be 6
 var limitPerPage = 6; //item limit per each page
-$('#page .my-card:gt('+ (limitPerPage - 1) +')').hide(); //Hide all items after 3 items
+$('#page .my-card:gt(' + (limitPerPage - 1) + ')').hide(); //Hide all items after 3 items
 
 var totalPages = Math.ceil(numberOfItems / limitPerPage); // get number of pages
 
-if(numberOfItems > 6){
+//If total number of items exceed 6 
+if (numberOfItems > 6) {
     // Previous page marker
     $(".pagination").append("<li class='page-item disabled' tabindex='-1'><a class='page-link' href='#'>" + 'Previous' + "</a></li>");
 
@@ -24,11 +25,11 @@ if(numberOfItems > 6){
     $(".pagination").append("<li class='page-item' id = 'next-page'><a class='page-link' href='#'>" + 'Next' + "</a></li>");
 
 
-    $('.pagination .current-page').on('click', function() {
-        if($(this).hasClass("active")){
+    $('.pagination .current-page').on('click', function () {
+        if ($(this).hasClass("active")) {
             return false;
-        }else {
-            var currentPage =  $(this).index();
+        } else {
+            var currentPage = $(this).index();
             $(".pagination li").removeClass('active'); // Remove the 'active' class status from the page that is currently being displayed
             $(this).addClass('active');
 
@@ -36,16 +37,16 @@ if(numberOfItems > 6){
 
             var grandTotal = limitPerPage * currentPage;
 
-            for(var i = grandTotal - limitPerPage; i < grandTotal; i++) {
-                $("#page .my-card:eq("+ i + ")").show();
+            for (var i = grandTotal - limitPerPage; i < grandTotal; i++) {
+                $("#page .my-card:eq(" + i + ")").show();
             }
         }
     });
 
 
-    $("#next-page").on("click", function() {
+    $("#next-page").on("click", function () {
         var currentPage = $(".pagination li.active").index();
-        if(currentPage == totalPages) {
+        if (currentPage == totalPages) {
             return false;
         } else {
             currentPage++;
@@ -54,12 +55,12 @@ if(numberOfItems > 6){
 
             var grandTotal = limitPerPage * currentPage;
 
-            for(var i = grandTotal - limitPerPage; i < grandTotal; i++) {
-                $("#page .my-card:eq("+ i + ")").show();
+            for (var i = grandTotal - limitPerPage; i < grandTotal; i++) {
+                $("#page .my-card:eq(" + i + ")").show();
             }
 
             $(".pagination li.current-page:eq(" + (currentPage - 1) + ")").addClass('active'); // Make new page number the 'active' page
-        
+
             $("#page .row").removeClass('col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4');
 
             $("#page .row").addClass('center-content');

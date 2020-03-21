@@ -34,9 +34,9 @@
                                         <div class="search-2">
                                             <select name="category-select" id="category">
                                                 <option value="Select Category" selected>Select Category</option>
-                                                <option value="design">Parttime</option>
-                                                <option value="development">Fulltime</option>
-                                                <option value="marketing">Remote</option>
+                                                <option value="design">Design</option>
+                                                <option value="development">Development</option>
+                                                <option value="marketing">Marketing</option>
                                             </select>
                                         </div>
                                     </div>
@@ -63,19 +63,19 @@
                 <h1 class="heading"><span>Open</span> Jobs</h1>
                 <div class="right-dropdown">
                     <select name="dropdown" id="dropdown">
-                        <option value="-Show-All" selected>-Sort by-</option>
-                        <option value="parttime">Parttime</option>
-                        <option value="fulltime">Fulltime</option>
-                        <option value="remote">Remote</option>
+                        <option value="-Show-All" selected onclick="filterSelection('all')">-Show All-</option>
+                        <option value="parttime" onclick="filterSelection('parttime')">Parttime</option>
+                        <option value="fulltime" onclick="filterSelection('fulltime')">Fulltime</option>
+                        <option value="remote" onclick="filterSelection('remote')">Remote</option>
                     </select>
                 </div>
             </div>
             <div id="page">
                 <div class="row">
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                        <div class="my-card card-1">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 filterDiv fulltime">
+                        <div class="my-card card-1 ">
                             <!-- <div class="banner"> -->
-                                <span class="job-nature">Parttime</span>
+                            <span class="job-nature">Fulltime</span>
                             <!-- </div> -->
                             <div class="job-header">
                                 <h2 class="title">Software Engineer</h2>
@@ -93,10 +93,10 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                        <div class="my-card card-2">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 filterDiv parttime">
+                        <div class="my-card card-2 ">
                             <!-- <div class="banner"> -->
-                                <span class="job-nature">Parttime</span>
+                            <span class="job-nature">Parttime</span>
                             <!-- </div> -->
                             <div class="job-header">
 
@@ -113,10 +113,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                        <div class="my-card card-3">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 filterDiv fulltime">
+                        <div class="my-card card-3 ">
                             <!-- <div class="banner"> -->
-                                <span class="job-nature">Parttime</span>
+                            <span class="job-nature">Fulltime</span>
                             <!-- </div> -->
                             <div class="job-header">
 
@@ -133,10 +133,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                        <div class="my-card card-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 filterDiv parttime">
+                        <div class="my-card card-4 ">
                             <!-- <div class="banner"> -->
-                                <span class="job-nature">Parttime</span>
+                            <span class="job-nature">Parttime</span>
                             <!-- </div> -->
                             <div class="job-header">
 
@@ -153,10 +153,10 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                        <div class="my-card card-5">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 filterDiv remote">
+                        <div class="my-card card-5 ">
                             <!-- <div class="banner"> -->
-                                <span class="job-nature">Parttime</span>
+                            <span class="job-nature">Remote</span>
                             <!-- </div> -->
                             <div class="job-header">
 
@@ -174,10 +174,10 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                        <div class="my-card card-6">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 filterDiv parttime">
+                        <div class="my-card card-6 ">
                             <!-- <div class="banner"> -->
-                                <span class="job-nature">Parttime</span>
+                            <span class="job-nature">Parttime</span>
                             <!-- </div> -->
                             <div class="job-header">
 
@@ -195,10 +195,10 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                        <div class="my-card card-6">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 filterDiv fulltime">
+                        <div class="my-card card-6 ">
                             <!-- <div class="banner"> -->
-                                <span class="job-nature">Parttime</span>
+                            <span class="job-nature">Fulltime</span>
                             <!-- </div> -->
                             <div class="job-header">
 
@@ -242,7 +242,8 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./resources/bootstrap/jquery.min.js"></script>
     <script src="./resources/bootstrap/bootstrap.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="./sortout.js"></script>
+    <!-- <script src="./pagination.js"></script> -->
 </body>
 
 </html>
