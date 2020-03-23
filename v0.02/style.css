@@ -42,27 +42,25 @@ Top Search Section Styles
 .search-content-wrapper {
     min-height: 530px;
     max-width: 1140px;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.search-content {}
-
-/*Style to be added outside of text-column*/
-
-.text-column {
+.search-content {
     color: #fff;
 }
 
-.text-column .title {
+/*Style to be added outside of text-column*/
+
+
+.search-content .title {
     font-family: 'Caladea', serif;
     font-size: 50px;
     margin-bottom: 15px;
 }
 
-.text-column .sub-title {
+.search-content .sub-title {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 40px;
@@ -110,6 +108,25 @@ Top Search Section Styles
     color: #fff;
 }
 
+@media only screen and (max-width:768px) {
+
+    .searchbar-container input,
+    .searchbar-container select {
+        border: 0;
+        border-bottom: 1px solid #fff;
+    }
+
+    .searchbar-container .search-3 {
+        width: 200px;
+        height: 100px;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+    }
+
+}
+
 /*=====================================
 Open Jobs Section Styles Start
 =======================================*/
@@ -129,8 +146,9 @@ Open Jobs Section Styles Start
 }
 
 .open-jobs-wrapper .open-job-header .heading span {
-    border-bottom: 0.7vh solid rgb(7, 7, 138);
+    border-bottom: 0.7vh solid #212331;
     padding-bottom: 2vh;
+    /* border-bottom: 0.7vh solid #1b915a; */
 }
 
 .right-dropdown #dropdown {
@@ -144,10 +162,24 @@ Open Jobs Section Styles Start
     background-color: #ddd;
 }
 
+@media only screen and (max-width:400px) {
+    .open-jobs-wrapper .open-job-header {
+        display: block;
+    }
+
+    .open-jobs-wrapper .open-job-header .heading {
+        margin-bottom: 60px;
+    }
+
+    .right-dropdown #dropdown {
+        width: 100%;
+    }
+}
+
 .my-card {
     /* width: 30vw; */
     border-radius: 1vh;
-    border: 1px solid #fff;
+    border: 1px solid #aaa;
     margin-bottom: 10vh;
     box-shadow: 0 0.3vw 1.5vw 0 rgba(0, 0, 0, 0.1);
     /* box-shadow: 0 0.3vw 1.5vw 0 rgba(0, 0, 0, 0.19); */
@@ -177,7 +209,7 @@ Open Jobs Section Styles Start
 }
 
 .my-card p {
-    color: #aaa;
+    color: #98a3a5;
     margin: 0;
 }
 
@@ -187,8 +219,12 @@ Open Jobs Section Styles Start
     position: absolute;
     top: 5%;
     right: 10%;
-    background-color: #1b915a;
     border-radius: 0.5vw;
+    /* background-color: #1b915a; */
+
+    color: #1b915a;
+    font-weight: 900;
+
 }
 
 .job-header {}
@@ -197,14 +233,14 @@ Open Jobs Section Styles Start
     /* display: block; */
     text-align: center;
     margin: 0;
-    padding: 3vh 0 1vh 0;
+    padding: 4vh 0 2vh 0;
     font-family: 'Caladea', serif;
     font-weight: 400;
 }
 
 .job-description {
     text-align: center;
-    padding: 0 0 3vh 0;
+    padding: 0 0 2vh 0;
 }
 
 .job-description .deadline {
@@ -221,16 +257,17 @@ Open Jobs Section Styles Start
 
 .button-block {
     text-align: center;
-    margin: 2vh 0 5vh 0;
+    margin: 2vh 0 4vh 0;
 }
 
 .button {
-    padding: 0.8vw 2.4vw;
-    /* border: 1px solid rgb(71, 219, 150); */
-    color: #fff;
+    padding: 0.9vw 2.4vw;
+    /* border: 1px solid #000; */
     border-radius: 1.3vw;
-    background-color: #E75D46;
-
+    color: #fff;
+    /* background-color: #f36133; */
+    background-color: #d0581c;
+    font-weight: bold;
 }
 
 .button:hover {
