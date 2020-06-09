@@ -7,6 +7,6 @@ This Project created for CodeSmith Tech Bd. Intention was to List all jobs, Job 
 - See the Live website here: [job-board.netlify.app](https://cst-job-board.netlify.app/)
 
 
-> Feel free to explore, clone and download the project.If you have any queries or suggestion, contact me : asifmrony@gmail.com 
+> If you have any queries or suggestion, contact me : asifmrony@gmail.com 
 
 ##### Check out My portfolio: [asifmrony.com](https://asifmrony.github.io/)
